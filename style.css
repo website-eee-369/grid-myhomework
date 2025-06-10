@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  padding: 25px;
+}
+.box{
+  text-align: left;
+  padding: 30px;
+  color: #222;
+  padding-left: 1px;
+}
+.box1 , .box3{
+  color: white;
+}
+.box3 {
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+b {
+    font-size: 30px;
+}
+/* span box... */
+.box1 , .box6 {
+  grid-column: span 9;
+}
+.box2 , .box7 , .box9 , .box10{
+  grid-column: span 3;
+}
+.box3 , .box11{
+  grid-column: span 12;
+}
+.box4 , .box5 , .box8{
+  grid-column: span 6;
+}
+/* image url box... */
+.box1{
+    background-image: url('https://gridbyexample.com/img/inflicted.png');
+}
+.box2 , .box4 , .box5 , .box6 , .box7 , .box8 , .box9 , .box10 , .box11{
+    background-color: rgb(129, 133, 133);
+}
+/* Responsive for phones & tablets */
+@media (max-width: 768px) {
+  .box1, .box2, .box3, .box4, .box5,
+  .box6, .box7, .box8, .box9, .box10, .box11 {
+    grid-column: span 12; /* full width on small screens */
+  }
+  .container {
+    padding: 10px;
+  }
+  .box {
+    height: auto;
+  }
+  /* add */
+  .back-g ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.back-g{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(150, 141, 141);
+    object-fit: cover;
+    width: 100%;
+    height: 7%;
+    align-content: center;
+}
+
+/* The First  */
+.bg-1 {
+  background-image: url('https://gridbyexample.com/img/inflicted.png');
+  color: white;
+  text-align: center;
+  padding: 10px 50px 40px;  /* ler ..left&right.. krom*/
+  width: 100%;
+}
+.s-content p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* The last One  */
+.bg-2 {
+  background-image: url('https://gridbyexample.com/img/inflicted.png');
+  text-align: center;
+  padding: 40px 60px 40px;
+  padding-left: 10%;
+  width: 100%;
+}
+.ig{
+    background-color: aliceblue;
+    object-fit: cover;
+    width: 90%;
+    height: 20%;
+}
+
+/* li ...... */
+ul li{
+  padding: 0 60px;
+
+}
+p , h1{
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 30px;
+}
